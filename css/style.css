@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    flex-direction: row;    
+}
+
+.side-hero {
+    min-height: 100vh;
+    width: 35vw;
+    background: teal;
+}
+
+.signup-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container {
+    border: 1px solid red;
+}
+
+form {
+    border: 1px dashed blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-fields {
+    display: flex;
+    height: 40vh;
+
+    /* justify-content: space-between; */
+}
