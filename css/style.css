@@ -1,41 +1,54 @@
 .main {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .side-hero {
-  min-height: 100vh;
-  min-width: 35vw;
-  background: teal;
+    min-height: 100vh;
+    min-width: 35vw;
+    background-image: url("../public/lidya-nada-tXz6g8JYYoI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.side-hero:after {
+    content: "photo by Lidya Nada on Unsplash";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 5px;
+    color: #ffffff;
+    font-size: 11px;
 }
 
 .signup-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-container {
-  border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 form {
-  border: 1px dashed blue;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    /* border: 1px dashed blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .input-fields {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 5px;
 }
 
 .input-fields>label {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
     justify-content: center;
