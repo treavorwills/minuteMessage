@@ -1,33 +1,49 @@
 .main {
-    display: flex;
-    flex-direction: row;    
+  display: flex;
+  flex-direction: row;
 }
 
 .side-hero {
-    min-height: 100vh;
-    width: 35vw;
-    background: teal;
+  min-height: 100vh;
+  min-width: 35vw;
+  background: teal;
 }
 
 .signup-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form-container {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 form {
-    border: 1px dashed blue;
-    display: flex;
-    flex-direction: column;
+  border: 1px dashed blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .input-fields {
-    display: flex;
-    height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 5px;
+}
 
-    /* justify-content: space-between; */
+.input-fields>label {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+    padding-left: 10px;
 }
