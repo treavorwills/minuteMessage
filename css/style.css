@@ -1,6 +1,17 @@
+:root {
+  --light-grey: #f2f2f2;
+  --grey: #777777;
+  --dark-grey: #3f3f3f;
+  --dark-blue: #023059;
+  --light-blue: #04B2D9;
+  --dark-green: #014029;
+  --light-green: #038C5A;
+}
+
 body {
     margin: 0px;
-    background-color: #f2f2f2;
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
 }
 
 .main {
@@ -61,20 +72,20 @@ form > div, .log-in, .signup-header {
 }
 
 .btn-submit:hover {
-    background-color: #023059;
+    background-color: var(--dark-blue);
 }
 
 .btn-submit {
-    background-color: #04B2D9;
+    background-color: var(--light-blue);
 
 }
 
 .btn-reset {
-    background-color: #038C5A;
+    background-color: var(--light-green);
 }
 
 .btn-reset:hover {
-    background-color: #014029;
+    background-color: var(--dark-green);
 }
 
 form {
@@ -97,15 +108,30 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    color: var(--grey);
 }
 
-input {
-    border: 1px solid #f2f2f2;
+label>input {
+    border: 1px solid var(--light-grey);
     border-radius: 5px;
     width: 200px;
     padding: 2px 7px;
+    margin-top: 5px;
 }
 
 .buttons {
     margin-top: 10px;
+    display: flex;
+}
+
+.btn {
+    margin-right: 20px;
+}
+
+.log-in>p>a {
+    color: var(--light-blue);
+}
+
+.log-in>p>a:hover {
+    color: var(--dark-blue);
 }
