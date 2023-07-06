@@ -9,6 +9,8 @@
 
   --pretty-font: 'Patrick Hand', cursive;
   --lato: 'Lato', sans-serif;
+
+  --hero-width: 45vw;
 }
 
 body {
@@ -25,11 +27,25 @@ body {
 
 .side-hero {
     min-height: 100vh;
-    min-width: 40vw;
+    min-width: var(--hero-width);
     background-image: url("../public/lidya-nada-tXz6g8JYYoI-unsplash.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-family: var(--pretty-font);
+    font-size: 4rem;
+    background-color: #3f3f3f8b;
+    color: white;
+    width: var(--hero-width);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .credit {
